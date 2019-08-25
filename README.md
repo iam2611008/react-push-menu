@@ -11,13 +11,13 @@ Install peer dependencies
 
 ## Install
 
-`npm install --save react-push-menu`
+`npm install --save react-push-menu-with-logo`
 
 ## How to use
 
 ```js
-import 'react-push-menu/styles/component.css';
-import PushMenu from 'react-push-menu';
+import 'react-push-menu-with-logo/styles/component.css';
+import PushMenu from 'react-push-menu-with-logo';
 import {FaChevronRight, FaChevronLeft} from 'react-icons/fa';
 
 /* ... */

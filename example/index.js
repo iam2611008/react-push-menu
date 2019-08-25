@@ -60,7 +60,6 @@ class Page extends React.Component{
         propMap={{url: 'link'}}
         logoIcon={<img src="./logo-u.svg" alt="logo" />}
       >
-
         <div className="rpm-trigger" id="rpm-trigger" >
           <FaBars />
         </div>

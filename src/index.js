@@ -86,6 +86,7 @@ export default class PushMenu extends Component {
 
     return (
       <div className="rpm-mp-level">
+        <div className="rpm-mp-header">{this.props.logoIcon}</div>
         <div className={`rpm-inline-block ${this.classPrefix}mp-back`}>
           <BackComponent classPrefix={this.classPrefix} data={nodeData} backIcon={backIcon} />
         </div>
