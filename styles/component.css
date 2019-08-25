@@ -179,6 +179,10 @@
 	font-size: 2em;
 }
 
+.rpm-mp-menu .rpm-mp-header img {
+	width: 30px;
+}
+
 .rpm-inline-block{
 	display:inline-block;
 }

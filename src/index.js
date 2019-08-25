@@ -58,6 +58,7 @@ export default class PushMenu extends Component {
     const nodeData = {
       menu: this.state.pushInstance,
       node,
+      nodeTitle,
       propMap,
       rootNode: this.props.nodes
     };
@@ -80,13 +81,20 @@ export default class PushMenu extends Component {
     const nodeChildren = node[propMap.childPropName];
     const { backComponent, backIcon } = this.props;
     const BackComponent = backComponent || DefaultBackComponent;
+
+    console.log(nodeTitle);
+
     return (
       <div className="rpm-mp-level">
-        <h2>{nodeTitle}</h2>
         <div className={`rpm-inline-block ${this.classPrefix}mp-back`}>
           <BackComponent classPrefix={this.classPrefix} data={nodeData} backIcon={backIcon} />
         </div>
         <ul>
+          <li>
+            <div className={`${this.classPrefix}node-cntr`}>
+              <a href="#" className="rpm-node-link rpm-inline-block">{nodeTitle}</a>
+            </div>
+          </li>
           {nodeChildren && nodeChildren.length > 0 && nodeChildren.map((node, key) => {
             return (
               this.renderNode(node, key, propMap)
@@ -106,7 +114,7 @@ export default class PushMenu extends Component {
 
           <nav id="rpm-mp-menu" className="rpm-mp-menu">
   					<div className="rpm-mp-level">
-  						<div className="rpm-mp-header">{this.props.nodes.header}</div>
+  						<div className="rpm-mp-header">{this.props.logoIcon}</div>
               <ul>
                 {nodeChildren && nodeChildren.map((node, key) => {
                   return (
@@ -147,7 +155,8 @@ PushMenu.propTypes = {
   backComponent: PropTypes.func,
   onMenuOpen: PropTypes.func,
   onMenuClose: PropTypes.func,
-  expanderComponent: PropTypes.func.isRequired
+  expanderComponent: PropTypes.func.isRequired,
+  logoIcon: PropTypes.node
 };
 
 PushMenu.defaultProps = {

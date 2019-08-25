@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="165px" height="206px" viewBox="0 0 165 206" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,0 L0,105.67615 C6.51610369,108.683257 13.8177533,110.89661 21.9088767,112.178828 C28.837392,113.274056 36.3275727,113.865556 43.8688138,113.987672 C45.9112333,114.014385 47.9615082,113.995304 50,113.953327 L50,0 L0,0 Z" id="path-1"></path>
+        <path d="M0.779802899,0.505572421 L0.779802899,42.2883587 L11.6768964,42.2883587 L11.6768964,179.505572 C22.5287424,173.950019 31.0767393,165.980333 37.2153096,156.418993 C44.8508163,144.515868 48.7798029,130.175763 48.7798029,115.028408 L48.7798029,0.505572421 L0.779802899,0.505572421 Z" id="path-3"></path>
+        <path d="M47.0030769,0 L47.0030769,92.691119 L36.336,92.6873292 L36.336,197.638476 C12.4763077,186.003767 -7.10542736e-15,162.211353 -7.10542736e-15,132.662222 L-7.10542736e-15,0 L47.0030769,0 Z" id="path-5"></path>
+        <path d="M0,0 L0,31.4302951 L5.88970935,31.4302951 L5.88970935,145 C13.1330715,144.866885 20.3010212,144.311607 26.9184603,143.246689 C34.7047918,141.99541 41.7332286,139.888393 48,137.081574 L48,133.62059 L48,0 L0,0 Z" id="path-7"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Logos-/--Understanding-Houston---color">
+            <g id="Group">
+                <g id="Colors-/-Brand-/-Palette-1-/-Secondary" transform="translate(37.000000, 92.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#D12E46" xlink:href="#path-1"></use>
+                    <g mask="url(#mask-2)" fill="#EF233C" id="Colors-/-Brand-/-Primary---Pantone-Red">
+                        <g>
+                            <rect id="Brand-/-Colors-/-Brand-/-Primary---Pantone-Red" x="0" y="0" width="50" height="114"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="Colors-/-Brand-/-Palette-1-/-Primary" transform="translate(116.000000, 19.310740)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <use id="Mask" fill="#112E51" xlink:href="#path-3"></use>
+                    <g mask="url(#mask-4)" fill="#112E51">
+                        <g transform="translate(1.000000, 0.000000)">
+                            <rect x="0" y="0" width="48" height="185"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="Colors-/-Brand-/-Palette-1-/-Varient-B" transform="translate(0.779064, 0.491502)">
+                    <mask id="mask-6" fill="white">
+                        <use xlink:href="#path-5"></use>
+                    </mask>
+                    <use id="Mask" fill="#5BC15E" xlink:href="#path-5"></use>
+                    <g mask="url(#mask-6)" fill="#DDD12A" id="Colors-/-Brand-/-Accent---Pear-">
+                        <g>
+                            <rect id="Brand-/-Colors-/-Brand-/-Accent---Pear" x="0" y="0" width="47" height="205"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="Colors-/-Brand-/-Palette-1-/-Varient-A" transform="translate(80.779803, 60.816313)">
+                    <mask id="mask-8" fill="white">
+                        <use xlink:href="#path-7"></use>
+                    </mask>
+                    <use id="Mask" fill="#76C6E0" xlink:href="#path-7"></use>
+                    <g mask="url(#mask-8)" fill="#7AC896" id="Colors-/-Brand-/-Accent---Sea-Green">
+                        <g>
+                            <rect id="Brand-/-Colors-/-Brand-/-Accent---Sea-Green" x="0" y="0" width="49" height="146"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

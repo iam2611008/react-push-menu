@@ -57,7 +57,9 @@ class Page extends React.Component{
         isOpen={false}
         nodes={this.state.menu}
         type={'cover'}
-        propMap={{url: 'link'}}>
+        propMap={{url: 'link'}}
+        logoIcon={<img src="./logo-u.svg" alt="logo" />}
+      >
 
         <div className="rpm-trigger" id="rpm-trigger" >
           <FaBars />

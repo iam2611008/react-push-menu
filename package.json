@@ -1,7 +1,7 @@
 {
-  "name": "react-push-menu",
-  "version": "1.0.2",
-  "description": "react multi level push menu",
+  "name": "react-push-menu-with-logo",
+  "version": "1.0.33",
+  "description": "react multi level push menu has logo icon",
   "main": "build/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
