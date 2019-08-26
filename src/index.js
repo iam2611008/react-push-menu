@@ -92,7 +92,7 @@ export default class PushMenu extends Component {
         </div>
         <ul>
           <li>
-            <div className={`${this.classPrefix}node-cntr`}>
+            <div className={`${this.classPrefix}node-cntr parent-menu-item`}>
               <a href="#" className="rpm-node-link rpm-inline-block">{nodeTitle}</a>
             </div>
           </li>
@@ -109,6 +109,8 @@ export default class PushMenu extends Component {
   render(){
     const propMap = Object.assign({}, defaultPropMaps, this.props.propMap);
     const nodeChildren = this.props.nodes[propMap.childPropName] || [];
+    const MenuButtonComponent = this.props.menuButtonComponent;
+
     return (
       <div className="rpm-container" id="rpm-container">
         <div className={`${this.classPrefix}mp-pusher`} id={`${this.classPrefix}mp-pusher`}>
@@ -123,9 +125,10 @@ export default class PushMenu extends Component {
                   );
                 })}
               </ul>
-
-
   					</div>
+            <div className="rpm-mp-bottom-menu">
+              <MenuButtonComponent />
+            </div>
   				</nav>
 
           <div className="rpm-scroller">
@@ -157,7 +160,8 @@ PushMenu.propTypes = {
   onMenuOpen: PropTypes.func,
   onMenuClose: PropTypes.func,
   expanderComponent: PropTypes.func.isRequired,
-  logoIcon: PropTypes.node
+  logoIcon: PropTypes.node,
+  menuButtonComponent: PropTypes.func
 };
 
 PushMenu.defaultProps = {

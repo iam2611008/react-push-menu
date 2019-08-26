@@ -59,6 +59,11 @@ class Page extends React.Component{
         type={'cover'}
         propMap={{url: 'link'}}
         logoIcon={<img src="./logo-u.svg" alt="logo" />}
+        menuButtonComponent={() => (
+          <div>
+            <a>Button</a>
+          </div>
+        )}
       >
         <div className="rpm-trigger" id="rpm-trigger" >
           <FaBars />
