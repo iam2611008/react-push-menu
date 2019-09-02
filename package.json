@@ -1,6 +1,6 @@
 {
   "name": "react-push-menu-with-logo",
-  "version": "1.0.51",
+  "version": "1.0.7",
   "description": "react multi level push menu has logo icon",
   "main": "build/index.js",
   "scripts": {

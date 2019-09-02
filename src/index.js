@@ -82,8 +82,6 @@ export default class PushMenu extends Component {
     const { backComponent, backIcon } = this.props;
     const BackComponent = backComponent || DefaultBackComponent;
 
-    console.log(nodeTitle);
-
     return (
       <div className="rpm-mp-level">
         <div className="rpm-mp-header">{this.props.logoIcon}</div>
@@ -110,6 +108,8 @@ export default class PushMenu extends Component {
     const propMap = Object.assign({}, defaultPropMaps, this.props.propMap);
     const nodeChildren = this.props.nodes[propMap.childPropName] || [];
     const MenuButtonComponent = this.props.menuButtonComponent;
+    const SearchComponent = this.props.searchComponent;
+    const { isSearch } = this.props;
 
     return (
       <div className="rpm-container" id="rpm-container">
@@ -118,13 +118,15 @@ export default class PushMenu extends Component {
           <nav id="rpm-mp-menu" className="rpm-mp-menu">
   					<div className="rpm-mp-level">
   						<div className="rpm-mp-header">{this.props.logoIcon}</div>
-              <ul>
-                {nodeChildren && nodeChildren.map((node, key) => {
-                  return (
-                    this.renderNode(node, key, propMap)
-                  );
-                })}
-              </ul>
+              {isSearch ? <SearchComponent /> : (
+                <ul>
+                  {nodeChildren && nodeChildren.map((node, key) => {
+                    return (
+                      this.renderNode(node, key, propMap)
+                    );
+                  })}
+                </ul>
+              )}
   					</div>
             <div className="rpm-mp-bottom-menu">
               <MenuButtonComponent />

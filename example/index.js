@@ -41,10 +41,28 @@ class Page extends React.Component{
           {name: 'Careers', id: 4, link: '/careers', children: []},
           {name: 'Contact', id: 5, link: null, children: []},
         ]
-      }
+      },
+      showSearchComponent: false
     }
   }
+
+  renderSearch = () => {
+    return (
+      <div className="search-field">
+        Test
+      </div>
+    );
+  }
+
+  showSearch = () => {
+    this.setState({
+      showSearchComponent: true
+    });
+  }
+
   render(){
+    const { showSearchComponent } = this.state;
+
     return (
       <PushMenu
         backIcon={<FaChevronLeft />}
@@ -61,14 +79,15 @@ class Page extends React.Component{
         logoIcon={<img src="./logo-u.svg" alt="logo" />}
         menuButtonComponent={() => (
           <div>
-            <a>Button</a>
+            <a onClick={this.showSearch}>Button</a>
           </div>
         )}
+        searchComponent={this.renderSearch}
+        isSearch={showSearchComponent}
       >
         <div className="rpm-trigger" id="rpm-trigger" >
           <FaBars />
         </div>
-
       </PushMenu>
     );
   }
